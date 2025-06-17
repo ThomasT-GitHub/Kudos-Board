@@ -6,8 +6,8 @@ const BoardCardGrid = ({ boardCardList }) => {
     return (
         <>
             <section className="BoardCardGrid-view">
-                {boardCardList.map((board, index) => {
-                    return <></>
+                {boardCardList.map((boardCard) => {
+                    return <BoardCard key={boardCard.id} boardCard={boardCard}/>
                 })}
             </section>
         </>

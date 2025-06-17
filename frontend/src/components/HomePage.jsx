@@ -1,5 +1,7 @@
 import { useState } from 'react'
+import { boards } from '../../../backend/data'
 import BoardCardGrid from './BoardCardGrid';
+import './HomePage.css'
 
 function HomePage() {
     const [boardSearchQuery, setBoardSearchQuery] = useState("");
@@ -13,7 +15,7 @@ function HomePage() {
     }
 
     const handleBoardSearchClear = () => {
-
+        setBoardSearchQuery("");
     }
 
     // If 'Enter' is pressed, send search
@@ -54,7 +56,7 @@ function HomePage() {
     }
 
     return (
-        <>
+        <section className="HomePage-View">
             <header className="HomePage-Banner">
                 <h1>KUDOBOARD</h1>
 
@@ -75,13 +77,13 @@ function HomePage() {
             </header>
 
             <section className="HomePage-Body">
-                <BoardCardGrid boardCardList={[]} />
+                <BoardCardGrid boardCardList={boards} />
             </section>
 
             <footer className="HomePage-Footer">
                 Thomas Trivino // Codepath 25
             </footer>
-        </>
+        </section>
     )
 }
 
