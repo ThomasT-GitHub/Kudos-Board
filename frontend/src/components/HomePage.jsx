@@ -15,7 +15,7 @@ function HomePage() {
             </header>
 
             <section className="HomePage-Body">
-                <BoardCardGrid boardCardList={boards} />
+                <BoardCardGrid boardCardList={Object.values(boards)} />
             </section>
 
             <footer className="HomePage-Footer">
