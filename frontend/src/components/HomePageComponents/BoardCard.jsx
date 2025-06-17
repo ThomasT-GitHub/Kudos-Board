@@ -1,6 +1,6 @@
-import './BoardCard.css'
 import ViewBoardButton from './ViewBoardButton'
 import DeleteBoardButton from './DeleteBoardButton'
+import './HomePageComponentStyles/BoardCard.css'
 
 function BoardCard({ boardCard }) {
 

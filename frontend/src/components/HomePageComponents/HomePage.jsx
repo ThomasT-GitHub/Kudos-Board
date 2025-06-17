@@ -2,7 +2,7 @@ import { boards } from '../../../../backend/data'
 import BoardCardGrid from './BoardCardGrid';
 import BoardGridFilter from './BoardGridFilter'
 import BoardGridSearch from './BoardGridSearch';
-import './HomePage.css'
+import './HomePageComponentStyles/HomePage.css'
 
 
 function HomePage() {
