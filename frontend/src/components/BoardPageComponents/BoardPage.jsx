@@ -5,7 +5,13 @@ import CardGrid from './CardGrid';
 
 function BoardPage() {
     const { id } = useParams();
+    const idAsInt = parseInt(id)
     const board = boards[id];
+    const cardBelongingToBoard = Object.values(cards).filter((card) => {
+        if (card.boardId === idAsInt)
+            return true;
+        return false;
+    });
 
     return (
         <section className="BoardPage-view">
@@ -16,7 +22,7 @@ function BoardPage() {
             </header>
 
             <section className="BoardPage-body">
-                <CardGrid />
+                <CardGrid cardBelongingToBoard={cardBelongingToBoard}/>
             </section>
 
             <footer className="BoardPage-footer">
