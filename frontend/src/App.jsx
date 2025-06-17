@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router'
-import HomePage from './components/HomePage'
-import BoardPage from './components/BoardPage'
+import HomePage from './components/HomePageComponents/HomePage'
+import BoardPage from './components/BoardPageComponents/BoardPage'
 import './App.css'
 
 function App() {

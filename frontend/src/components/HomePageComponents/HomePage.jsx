@@ -1,4 +1,4 @@
-import { boards } from '../../../backend/data'
+import { boards } from '../../../../backend/data'
 import BoardCardGrid from './BoardCardGrid';
 import BoardGridFilter from './BoardGridFilter'
 import BoardGridSearch from './BoardGridSearch';

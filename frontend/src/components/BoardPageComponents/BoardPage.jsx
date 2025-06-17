@@ -1,4 +1,4 @@
-import { boards, cards } from '../../../backend/data' // Simulates API fetch
+import { boards, cards } from '../../../../backend/data' // Simulates API fetch
 import { useParams } from 'react-router'
 import CreateCardButton from './CreateCardButton';
 import CardGrid from './CardGrid';
