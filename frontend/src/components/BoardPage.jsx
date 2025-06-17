@@ -3,10 +3,11 @@ import { useParams } from 'react-router'
 
 function BoardPage() {
     const { id } = useParams();
+    const board = boards[id];
 
     return (
         <>
-            <p>{id}</p>
+            <h2>{board.title}</h2>
         </>
     )
 }
