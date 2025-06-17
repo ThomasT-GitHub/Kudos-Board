@@ -1,5 +1,5 @@
 import BoardCard from './BoardCard'
-import './BoardCardGrid.css'
+import './HomePageComponentStyles/BoardCardGrid.css'
 
 const BoardCardGrid = ({ boardCardList }) => {
 
