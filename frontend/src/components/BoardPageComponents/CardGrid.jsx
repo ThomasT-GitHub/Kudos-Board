@@ -1,4 +1,5 @@
 import Card from "./Card";
+import "./BoardPageComponentStyles/CardGrid.css"
 
 function CardGrid({ cardBelongingToBoard }) {
     return (

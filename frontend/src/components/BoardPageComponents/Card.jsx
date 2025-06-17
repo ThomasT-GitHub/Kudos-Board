@@ -1,18 +1,20 @@
 import UpvoteButton from './UpvoteButton'
 import DeleteCardButton from './DeleteCardButton'
+import './BoardPageComponentStyles/Card.css'
 
 function Card({ card }) {
     return (
         <>
             <section className="Card-view">
-                <h3>{card.title}</h3>
-                <p>{card.message}</p>
-                <img src={card.gif} alt="" />
-            </section>
-
-            <section className="Card-buttons">
-                <UpvoteButton />
-                <DeleteCardButton />
+                <h3 className="Card-title">{card.title}</h3>
+                <p className="Card-message">{card.message}</p>
+                <section className="Card-image-container">
+                    <img className="Card-image" src={card.gif} alt={`${card.title} image`} />
+                </section>
+                <section className="Card-buttons">
+                    <UpvoteButton />
+                    <DeleteCardButton />
+                </section>
             </section>
         </>
     );
