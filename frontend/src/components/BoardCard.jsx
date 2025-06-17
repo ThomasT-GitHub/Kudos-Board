@@ -5,19 +5,19 @@ import DeleteBoardButton from './DeleteBoardButton'
 function BoardCard({ boardCard }) {
 
     return (
-      <>
-        <section className="BoardCard-view">
-            <img src={boardCard.image} alt={boardCard.title} />
-            <h2 className="BoardCard-title">{boardCard.title}</h2>
-            <p className="BoardCard-category">{boardCard.category}</p>
+        <>
+            <section className="BoardCard-view">
+                <img src={boardCard.image} alt={boardCard.title} />
+                <h2 className="BoardCard-title">{boardCard.title}</h2>
+                <p className="BoardCard-category">{boardCard.category}</p>
 
-            <section className="BoardCard-buttons">
-                <ViewBoardButton />
-                <DeleteBoardButton />
+                <section className="BoardCard-buttons">
+                    <ViewBoardButton id={boardCard.id} />
+                    <DeleteBoardButton id={boardCard.id} />
+                </section>
             </section>
-        </section>
-      </>
+        </>
     )
-  }
+}
 
-  export default BoardCard
+export default BoardCard
